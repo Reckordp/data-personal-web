@@ -34,5 +34,11 @@ document.onload((evt) => {
       tanggalLahir: document.getElementById("tanggalLahir").value, 
       jenisKelamin: document.getAnimations("jenisKelamin").value
     })
+    document.getElementById("namaLengkap").value = ""
+    document.getElementById("email").value = ""
+    document.getElementById("nomerTelpon").value = ""
+    document.getElementById("tempatLahir").value = ""
+    document.getElementById("tanggalLahir").value = ""
+    document.getAnimations("jenisKelamin").value = ""
   })
 })
