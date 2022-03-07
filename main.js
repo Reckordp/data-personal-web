@@ -21,10 +21,10 @@ const firebaseConfig = {
 
 // GO
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore()
 
-document.onload((evt) => {
+window.onload((evt) => {
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore()
   document.getElementById("selesai").addEventListener("click", (ev) => {
     db.collection("data-personal").doc().set({
       namaLengkap: document.getElementById("namaLengkap").value, 
