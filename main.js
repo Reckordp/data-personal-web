@@ -22,7 +22,7 @@ const firebaseConfig = {
 // GO
 // Initialize Firebase
 
-window.onload((evt) => {
+window.onload = (evt) => {
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore()
   document.getElementById("selesai").addEventListener("click", (ev) => {
@@ -41,4 +41,4 @@ window.onload((evt) => {
     document.getElementById("tanggalLahir").value = ""
     document.getAnimations("jenisKelamin").value = ""
   })
-})
+}
