@@ -32,7 +32,7 @@ window.onload = (evt) => {
       nomerTelepon: document.getElementById("nomerTelpon").value, 
       tempatLahir: document.getElementById("tempatLahir").value, 
       tanggalLahir: document.getElementById("tanggalLahir").value, 
-      jenisKelamin: document.getAnimations("jenisKelamin").value
+      jenisKelamin: document.getElementById("jenisKelamin").value
     })
     document.getElementById("namaLengkap").value = ""
     document.getElementById("email").value = ""
