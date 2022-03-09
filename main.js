@@ -23,7 +23,7 @@ const firebaseConfig = {
 // Initialize Firebase
 
 window.onload = (evt) => {
-  if (firebase.getApp() == null) firebase.initializeApp(firebaseConfig);
+  //if (firebase.getApp() == null) firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore()
   document.getElementById("selesai").addEventListener("click", (ev) => {
     db.collection("data-personal").doc().set({
